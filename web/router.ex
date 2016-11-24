@@ -19,6 +19,12 @@ defmodule TodoApp.Router do
     get "/", PageController, :index
   end
 
+  forward "/graphql", Absinthe.Plug, schema: TodoApp.Schema
+
+  if Mix.env == :dev do
+    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: TodoApp.Schema
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", TodoApp do
   #   pipe_through :api
