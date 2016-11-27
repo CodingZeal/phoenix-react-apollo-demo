@@ -1,6 +1,10 @@
 defmodule TodoApp.Endpoint do
   use Phoenix.Endpoint, otp_app: :todo_app
 
+  if Application.get_env(:todo_app, :sql_sandbox) do
+    plug Phoenix.Ecto.SQL.Sandbox
+  end
+
   socket "/socket", TodoApp.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
