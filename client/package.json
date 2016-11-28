@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.7.0"
+    "@zeal/react-scripts": "0.1.0"
   },
   "dependencies": {
     "exit_on_eof": "^1.0.3",
