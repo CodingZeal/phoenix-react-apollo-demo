@@ -13,7 +13,7 @@ config :todo_app,
 config :todo_app, TodoApp.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "9njE0Zddnfcc4TvXXxzHbT8Ppobo4RV78jSbdxqOivkSNFxdgWsHjk3s+++UPhv/",
-  render_errors: [view: TodoApp.ErrorView, accepts: ~w(html json)],
+  render_errors: [view: TodoApp.ErrorView, accepts: ~w(json)],
   pubsub: [name: TodoApp.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
