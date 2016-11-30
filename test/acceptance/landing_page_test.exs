@@ -8,6 +8,6 @@ defmodule TodoApp.LandingPageTest do
       |> find("h2")
       |> text
 
-    assert greeting == "Welcome to Phoenix!"
+    assert greeting == "Welcome to React"
   end
 end
