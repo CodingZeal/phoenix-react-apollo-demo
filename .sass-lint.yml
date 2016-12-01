@@ -1,0 +1,52 @@
+files:
+  include: 'client/**/*.scss'
+
+rules:
+  border-zero:
+    - 1
+    -
+      convention: none
+
+  brace-style:
+    - 1
+    -
+      single-line: false
+
+  class-name-format:
+    - 1
+    -
+      allow-leading-underscore: false
+      convention: camelcase
+
+  force-attribute-nesting: 0
+  force-pseudo-nesting: 0
+
+  id-name-format:
+    - 1
+    -
+      allow-leading-underscore: false
+
+  mixins-before-declarations:
+    - 1
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  no-color-literals: 0
+  no-css-comments: 0
+
+  no-misspelled-properties:
+    - 1
+    -
+      'extra-properties':
+        - 'composes'
+
+  placeholder-in-extend: 0
+
+  property-sort-order:
+    - 1
+    -
+      ignore-custom-properties: true
+
+  variable-for-property: 0
