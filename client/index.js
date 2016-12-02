@@ -1,8 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router'
 import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router'
+import { ThemeProvider } from 'react-css-themr';
+
+import theme from './styles/theme'
+
 import 'normalize.css'
+import './styles/globals.scss'
 
 import App from './modules/app/components/App'
 import { configureStore } from './base'
@@ -15,9 +20,11 @@ ReactDOM.render(<Root currentApp={App} />, rootEl)
 function Root({ currentApp }) {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        {React.createElement(currentApp)}
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          {React.createElement(currentApp)}
+        </BrowserRouter>
+      </ThemeProvider>
     </Provider>
   )
 }

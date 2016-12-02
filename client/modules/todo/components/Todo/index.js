@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Checkbox, Input } from 'react-toolbox'
+import Checkbox from 'react-toolbox/lib/checkbox/Checkbox'
+import Input from 'react-toolbox/lib/input/Input'
 
 export default function Todo(props) {
   const {
@@ -11,8 +12,12 @@ export default function Todo(props) {
 
   return (
     <div>
-      <Checkbox checked={completed} onChange={onToggle} />
-      <Input value={text} onChange={onChange} />
+      <Checkbox
+          checked={completed}
+          onChange={onToggle} />
+      <Input
+          defaultValue={text}
+          onChange={onChange} />
     </div>
   )
 }
