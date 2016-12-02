@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Checkbox, Input } from 'react-toolbox'
 
-import s from './styles.scss'
+export default function Todo(props) {
+  const {
+    completed,
+    text,
+    onChange,
+    onToggle
+  } = props
 
-export default function Todo() {
   return (
-    <input className={s.input} type="text" />
+    <div>
+      <Checkbox checked={completed} onChange={onToggle} />
+      <Input value={text} onChange={onChange} />
+    </div>
   )
 }
