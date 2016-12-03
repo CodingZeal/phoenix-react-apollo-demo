@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "empty": "^0.10.1",
+    "flow-bin": "^0.36.0",
     "history": "^4.4.1",
     "immutability-helper": "^2.0.0",
     "node-sass": "^3.13.0",

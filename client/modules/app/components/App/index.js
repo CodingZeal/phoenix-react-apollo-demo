@@ -1,10 +1,11 @@
+/* @flow */
 import React from 'react'
 import { Match, Miss } from 'react-router'
 
 import styles from './styles.scss'
 import logo from './logo.png'
 
-export default function App({ store }) {
+export default function App() {
   return (
     <div className={styles.root}>
       <div className={styles.header}>

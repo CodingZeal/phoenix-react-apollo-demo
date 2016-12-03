@@ -1,1 +1,3 @@
-export Todo from './components/Todo'
+/* @flow */
+import Todo from './components/Todo'
+export { Todo }
