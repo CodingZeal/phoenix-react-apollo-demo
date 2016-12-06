@@ -1,0 +1,17 @@
+.checkbox {
+  flex-shrink: 1;
+  position: relative;
+  top: 5px;
+}
+
+.input {
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+
+.todo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
