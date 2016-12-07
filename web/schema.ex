@@ -2,6 +2,8 @@ defmodule TodoApp.Schema do
   use Absinthe.Schema
   alias TodoApp.{Repo, Todo}
 
+  import_types TodoApp.Schema.Types
+
   query do
     field :todos, list_of(:todo) do
       resolve fn _, _ ->
@@ -28,11 +30,5 @@ defmodule TodoApp.Schema do
         |> Repo.insert
       end
     end
-  end
-
-  object :todo do
-    field :id, :id
-    field :title, :string
-    field :completed, :boolean
   end
 end
