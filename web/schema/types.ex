@@ -1,7 +1,7 @@
 defmodule TodoApp.Schema.Types do
   use Absinthe.Schema.Notation
 
-  @desc "A Todo "
+  @desc "A Todo"
   object :todo do
     field :id, :id
     field :title, :string

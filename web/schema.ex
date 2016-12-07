@@ -1,34 +1,28 @@
 defmodule TodoApp.Schema do
   use Absinthe.Schema
-  alias TodoApp.{Repo, Todo}
+  alias TodoApp.{Repo, Resolver}
 
   import_types TodoApp.Schema.Types
 
   query do
+    @desc "All Todos"
     field :todos, list_of(:todo) do
-      resolve fn _, _ ->
-        {:ok, Todo |> Repo.all}
-      end
+      resolve &Resolver.Todo.all/3
     end
 
+    @desc "Find a Todo by it's id"
     field :todo, :todo do
       arg :id, non_null(:id)
-      resolve fn %{id: todo_id}, _ ->
-        {:ok, Todo |> Repo.get(todo_id)}
-      end
+      resolve &Resolver.Todo.find/3
     end
   end
 
   mutation do
+    @desc "Create a new Todo"
     field :todo, type: :todo do
       arg :title, non_null(:string)
       arg :completed, :boolean
-
-      resolve fn args, _ ->
-        %Todo{}
-        |> Todo.changeset(args)
-        |> Repo.insert
-      end
+      resolve &Resolver.Todo.create/3
     end
   end
 end
