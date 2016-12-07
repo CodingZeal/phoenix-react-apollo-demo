@@ -17,6 +17,19 @@ defmodule TodoApp.Schema do
     end
   end
 
+  mutation do
+    field :todo, type: :todo do
+      arg :title, non_null(:string)
+      arg :completed, :boolean
+
+      resolve fn args, _ ->
+        %Todo{}
+        |> Todo.changeset(args)
+        |> Repo.insert
+      end
+    end
+  end
+
   object :todo do
     field :id, :id
     field :title, :string
