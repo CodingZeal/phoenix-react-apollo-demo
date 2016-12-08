@@ -1,3 +1,8 @@
 /* @flow */
 import Todo from './components/Todo'
-export { Todo }
+import TodoListContainer from './containers/TodoList'
+
+export {
+  Todo,
+  TodoListContainer
+}

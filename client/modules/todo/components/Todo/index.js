@@ -14,9 +14,9 @@ type TodoTheme = {
 }
 
 function Todo(
-  { completed, text, theme, onChange, onToggle }: {
+  { completed, title, theme, onChange, onToggle }: {
     completed?: boolean,
-    text?: string,
+    title?: string,
     theme: TodoTheme,
     onChange: () => void,
     onToggle: () => void
@@ -32,7 +32,7 @@ function Todo(
 
       <div className={theme.input}>
         <Input
-            defaultValue={text}
+            defaultValue={title}
             onChange={onChange} />
       </div>
     </div>

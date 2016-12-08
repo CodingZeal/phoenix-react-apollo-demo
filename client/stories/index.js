@@ -22,14 +22,14 @@ storiesOf('Todo', module)
   ))
   .add('with text', applyTheme(
     <Todo
-        text='Do something'
+        title='Do something'
         onChange={action('changed')}
         onToggle={action('toggled')} />
   ))
   .add('completed', applyTheme(
     <Todo
         completed
-        text='Do something'
+        title='Do something'
         onChange={action('changed')}
         onToggle={action('toggled')} />
   ))

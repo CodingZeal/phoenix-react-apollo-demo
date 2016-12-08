@@ -1,27 +1,31 @@
 /* @flow */
 import React from 'react'
 import { Match, Miss } from 'react-router'
+import { themr } from 'react-css-themr';
 
-import styles from './styles.scss'
+import TodoLayout from '../TodoLayout'
+
+import appTheme from './theme.scss'
 import logo from './logo.png'
 
-export default function App() {
+type AppTheme = {
+  app: string,
+  header: string,
+  logo: string,
+  todoList: string
+}
+
+function App({ theme }: { theme: AppTheme }) {
   return (
-    <div className={styles.root}>
-      <div className={styles.header}>
-        <img src={logo} className={styles.logo} alt='logo' />
+    <div className={theme.app}>
+      <div className={theme.header}>
+        <img src={logo} className={theme.logo} alt='logo' />
         <h2>Welcome!</h2>
       </div>
 
-      <Match exactly pattern='/' component={Home} />
+      <Match exactly pattern='/' component={TodoLayout} />
       <Miss component={NotFound} />
     </div>
-  )
-}
-
-function Home() {
-  return (
-    <h3>Home</h3>
   )
 }
 
@@ -30,3 +34,5 @@ function NotFound() {
     <h3>Route not found</h3>
   )
 }
+
+export default themr('', appTheme)(App)
