@@ -19,10 +19,18 @@ defmodule TodoApp.Schema do
 
   mutation do
     @desc "Create a new Todo"
-    field :todo, type: :todo do
+    field :create_todo, type: :todo do
       arg :title, non_null(:string)
       arg :completed, :boolean
       resolve &Resolver.Todo.create/3
+    end
+
+    @desc "Update a Todo"
+    field :update_todo, type: :todo do
+      arg :id, non_null(:id)
+      arg :title, :string
+      arg :completed, :boolean
+      resolve &Resolver.Todo.update/3
     end
   end
 end

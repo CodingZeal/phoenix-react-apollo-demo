@@ -12,17 +12,23 @@ type TodoListTheme = {
   todoList: string
 }
 
-function TodoList({ theme, data: { loading, todos } }: {
+function TodoList({ data: { loading, todos }, theme, updateTodo }: {
+  data: { loading: boolean, todos: Array<TodoType> },
   theme: TodoListTheme,
-  data: {
-    loading: boolean,
-    todos: Array<TodoType>
-  },
+  updateTodo: () => void
 }) {
   if (loading) return <h3>Loading...</h3>
+
   return (
     <div className={theme.todoList}>
-      {todos.map(todo => <Todo key={todo.id} {...todo} />)}
+      {todos.map(todo =>
+        <Todo
+          {...todo}
+          key={todo.id}
+          onChange={title => updateTodo({ ...todo, title })}
+          onToggle={completed => updateTodo({ ...todo, completed })}
+        />
+      )}
     </div>
   )
 }
