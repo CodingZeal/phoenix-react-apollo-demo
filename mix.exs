@@ -19,7 +19,7 @@ defmodule TodoApp.Mixfile do
   def application do
     [mod: {TodoApp, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :absinthe, :absinthe_relay]]
+                    :phoenix_ecto, :postgrex, :absinthe]]
   end
 
   # Specifies which paths to compile per environment.
@@ -40,7 +40,6 @@ defmodule TodoApp.Mixfile do
      {:cowboy, "~> 1.0"},
      {:wallaby, "~> 0.14.0"},
      {:absinthe, "~> 1.2.0"},
-     {:absinthe_relay, "~> 1.2.0"},
      {:absinthe_plug, "~> 1.1"}]
   end
 

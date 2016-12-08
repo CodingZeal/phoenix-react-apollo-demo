@@ -1,6 +1,6 @@
 defmodule TodoApp.Schema do
   use Absinthe.Schema
-  alias TodoApp.{Repo, Resolver}
+  alias TodoApp.Resolver
 
   import_types TodoApp.Schema.Types
 
