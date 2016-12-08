@@ -1,3 +1,8 @@
 /* @flow */
+import apolloClient from './apolloClient'
 import configureStore from './configureStore'
-export { configureStore }
+
+export {
+  apolloClient,
+  configureStore
+}
