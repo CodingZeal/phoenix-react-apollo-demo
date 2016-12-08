@@ -1,4 +1,5 @@
 /* @flow */
+
 import { applyMiddleware, createStore, compose } from 'redux'
 
 import apolloClient from './apolloClient'

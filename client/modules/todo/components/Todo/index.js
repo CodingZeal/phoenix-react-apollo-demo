@@ -1,4 +1,5 @@
 /* @flow */
+
 import React from 'react'
 
 import { themr } from 'react-css-themr';
@@ -13,15 +14,13 @@ type TodoTheme = {
   todo: string,
 }
 
-function Todo(
-  { completed, title, theme, onChange, onToggle }: {
-    completed?: boolean,
-    title?: string,
-    theme: TodoTheme,
-    onChange: () => void,
-    onToggle: () => void
-  }
-) {
+function Todo({ completed, title, theme, onChange, onToggle }: {
+  completed?: boolean,
+  title?: string,
+  theme: TodoTheme,
+  onChange: () => void,
+  onToggle: () => void
+}) {
   return (
     <div className={theme.todo}>
       <div className={theme.checkbox}>

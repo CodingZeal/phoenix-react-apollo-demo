@@ -1,30 +1,18 @@
 /* @flow */
-import React from 'react'
-import { themr } from 'react-css-themr';
 
-import Todo from '../../components/Todo'
+import { graphql } from 'react-apollo';
+import gql from 'graphql-tag';
 
-import todoListTheme from './theme.scss'
+import TodoList from '../../components/TodoList'
 
-type TodoListTheme = {
-  todoList: string
-}
+const allTodos = gql`
+  query allTodos {
+    todos {
+      id,
+      title,
+      completed
+    }
+  }
+`
 
-function TodoList({ theme }: { theme: TodoListTheme }) {
-  return (
-    <div className={theme.todoList}>
-      <Todo
-          completed
-          title='Do something'
-          onChange={() => {}}
-          onToggle={() => {}} />
-
-      <Todo
-          title='Do something else'
-          onChange={() => {}}
-          onToggle={() => {}} />
-    </div>
-  )
-}
-
-export default themr('', todoListTheme)(TodoList)
+export default graphql(allTodos)(TodoList)
