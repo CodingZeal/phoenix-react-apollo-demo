@@ -14,6 +14,6 @@ defmodule TodoApp.Todo do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:title, :completed])
-    |> validate_required([:title, :completed])
+    |> validate_required([:completed])
   end
 end
