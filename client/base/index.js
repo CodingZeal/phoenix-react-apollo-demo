@@ -1,1 +1,3 @@
-export configureStore from './configureStore'
+/* @flow */
+import configureStore from './configureStore'
+export { configureStore }

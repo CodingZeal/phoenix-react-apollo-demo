@@ -1,3 +1,4 @@
-export default function reducer(state = {}, _action) {
+/* @flow */
+export default function reducer(state: any = {}, _action: any) {
   return state
 }

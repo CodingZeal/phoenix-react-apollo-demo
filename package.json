@@ -8,15 +8,18 @@
     "babel-preset-stage-1": "^6.16.0"
   },
   "dependencies": {
+    "apollo-client": "^0.5.12",
     "classnames": "^2.2.5",
     "empty": "^0.10.1",
     "flow-bin": "^0.36.0",
+    "graphql-tag": "^1.1.2",
     "history": "^4.4.1",
     "immutability-helper": "^2.0.0",
     "node-sass": "^3.13.0",
     "normalize.css": "^5.0.0",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.1",
+    "react-apollo": "^0.6.0",
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
     "react-router": "^4.0.0-alpha.6",
