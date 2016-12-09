@@ -4,7 +4,7 @@ defmodule TodoApp.TodoTest do
   alias TodoApp.Todo
 
   @valid_attrs %{completed: true, title: "some content"}
-  @invalid_attrs %{}
+  @invalid_attrs %{title: false}
 
   test "changeset with valid attributes" do
     changeset = Todo.changeset(%Todo{}, @valid_attrs)
