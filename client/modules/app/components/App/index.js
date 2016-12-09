@@ -32,7 +32,9 @@ function App({ theme }: { theme: AppTheme }) {
 
 function NotFound() {
   return (
-    <h3>Route not found</h3>
+    <h5 style={{ margin: 40 }}>
+      Route not found
+    </h5>
   )
 }
 
