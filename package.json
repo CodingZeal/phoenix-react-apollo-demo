@@ -8,6 +8,7 @@
     "babel-preset-stage-1": "^6.16.0"
   },
   "dependencies": {
+    "@kadira/storybook-addon-knobs": "^1.7.1",
     "apollo-client": "^0.5.12",
     "babel-polyfill": "^6.20.0",
     "classnames": "^2.2.5",
@@ -28,6 +29,7 @@
     "redux": "^3.6.0",
     "redux-devtools-extension": "^1.0.0",
     "sass-loader": "^4.0.2",
+    "storybook-host": "^1.0.8",
     "webpack": "^1.13.3"
   },
   "scripts": {

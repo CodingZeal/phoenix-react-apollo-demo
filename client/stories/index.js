@@ -1,9 +1,11 @@
 /* @flow */
 
-import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
-import { AddTodo, Todo } from '../modules/todo';
-import { ThemeProvider } from 'react-css-themr';
+import React from 'react'
+import { storiesOf, action, addDecorator } from '@kadira/storybook'
+import { ThemeProvider } from 'react-css-themr'
+import { host } from 'storybook-host'
+
+import { AddTodo, Todo } from '../modules/todo'
 
 import '../styles/commons.scss'
 import theme from '../styles/theme'
@@ -17,11 +19,21 @@ function applyTheme(element) {
 }
 
 storiesOf('AddTodo', module)
+  .addDecorator(host({
+    align: 'top left',
+    height: 80,
+    width: 400,
+  }))
   .add('base', applyTheme(
     <AddTodo onSave={action('saved')} />
   ))
 
 storiesOf('Todo', module)
+  .addDecorator(host({
+    align: 'top left',
+    height: 80,
+    width: 400,
+  }))
   .add('empty', applyTheme(
     <Todo
         onChange={action('changed')}
