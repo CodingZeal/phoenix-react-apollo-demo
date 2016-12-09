@@ -1,8 +1,9 @@
 defmodule TodoApp.Resolver.Todo do
   alias TodoApp.{Repo, Todo}
+  import Ecto.Query, only: [order_by: 2]
 
   def all(_parent, _args, _info) do
-    {:ok, Todo |> Repo.all}
+    {:ok, Todo |> order_by(desc: :inserted_at) |> Repo.all}
   end
 
   def create(_parent, args, _info) do
