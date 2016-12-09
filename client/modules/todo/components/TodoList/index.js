@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { themr } from 'react-css-themr';
+import ProgressBar from 'react-toolbox/lib/progress_bar/ProgressBar'
 
 import Todo from '../../components/Todo'
 import type { Todo as TodoType } from '../../types'
@@ -18,7 +19,7 @@ function TodoList({ data: { loading, todos }, theme, deleteTodo, updateTodo }: {
   deleteTodo: () => void,
   updateTodo: () => void
 }) {
-  if (loading) return <h3>Loading...</h3>
+  if (loading) return <Loading theme={theme} />
 
   return (
     <div className={theme.todoList}>
@@ -31,6 +32,14 @@ function TodoList({ data: { loading, todos }, theme, deleteTodo, updateTodo }: {
           onToggle={completed => updateTodo({ ...todo, completed })}
         />
       )}
+    </div>
+  )
+}
+
+function Loading({ theme }) {
+  return (
+    <div className={theme.todoList}>
+      <ProgressBar type='circular' mode='indeterminate' />
     </div>
   )
 }
