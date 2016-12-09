@@ -7,10 +7,8 @@ import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter } from 'react-router'
 import { ThemeProvider } from 'react-css-themr';
 
+import './styles/commons.scss'
 import theme from './styles/theme'
-
-import 'normalize.css'
-import './styles/globals.scss'
 
 import App from './modules/app/components/App'
 import { apolloClient, configureStore } from './base'

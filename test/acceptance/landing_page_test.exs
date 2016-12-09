@@ -5,7 +5,7 @@ defmodule TodoApp.LandingPageTest do
     greeting =
       session
       |> visit("/")
-      |> find("h2")
+      |> find("h4")
       |> text
 
     assert greeting == "Welcome!"

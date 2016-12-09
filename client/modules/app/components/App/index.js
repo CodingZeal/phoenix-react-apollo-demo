@@ -21,7 +21,7 @@ function App({ theme }: { theme: AppTheme }) {
     <div className={theme.app}>
       <div className={theme.header}>
         <img src={logo} className={theme.logo} alt='logo' />
-        <h2>Welcome!</h2>
+        <h4>Welcome!</h4>
       </div>
 
       <Match exactly pattern='/' component={TodoLayout} />
