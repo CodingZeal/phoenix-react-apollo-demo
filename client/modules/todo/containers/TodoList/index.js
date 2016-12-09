@@ -16,7 +16,7 @@ const allTodos = gql`
 `
 
 const updateTodo = gql`
-  mutation updateTodo($id: ID!, $title: String, $completed: String) {
+  mutation updateTodo($id: ID!, $title: String, $completed: Boolean) {
     updateTodo(id: $id, title: $title, completed: $completed) {
       id,
       title,

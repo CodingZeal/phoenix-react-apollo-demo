@@ -2,9 +2,10 @@
 
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import { Todo } from '../modules/todo';
+import { AddTodo, Todo } from '../modules/todo';
 import { ThemeProvider } from 'react-css-themr';
 
+import '../styles/commons.scss'
 import theme from '../styles/theme'
 
 function applyTheme(element) {
@@ -14,6 +15,11 @@ function applyTheme(element) {
     </ThemeProvider>
   )
 }
+
+storiesOf('AddTodo', module)
+  .add('base', applyTheme(
+    <AddTodo onSave={action('saved')} />
+  ))
 
 storiesOf('Todo', module)
   .add('empty', applyTheme(
