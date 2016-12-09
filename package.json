@@ -21,7 +21,7 @@
     "normalize.css": "^5.0.0",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.1",
-    "react-apollo": "^0.6.0",
+    "react-apollo": "^0.7.0",
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
     "react-router": "^4.0.0-alpha.6",
