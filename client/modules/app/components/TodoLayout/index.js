@@ -3,7 +3,10 @@
 import React from 'react'
 import { themr } from 'react-css-themr';
 
-import { AddTodoContainer, TodoListContainer } from '../../../../modules/todo'
+import {
+  AddTodoContainer as AddTodo,
+  TodoListContainer as TodoList
+} from '../../../../modules/todo'
 
 import todoTheme from './theme.scss'
 
@@ -18,11 +21,11 @@ function TodoLayout({ theme }: { theme: TodoTheme }) {
   return (
     <div>
       <div className={theme.addTodoWrapper}>
-        <AddTodoContainer theme={theme}/>
+        <AddTodo theme={theme}/>
       </div>
 
       <div className={theme.todoListWrapper}>
-        <TodoListContainer theme={theme} />
+        <TodoList theme={theme} />
       </div>
     </div>
   )

@@ -12,8 +12,7 @@ import logo from './logo.png'
 type AppTheme = {
   app: string,
   header: string,
-  logo: string,
-  todoList: string
+  logo: string
 }
 
 function App({ theme }: { theme: AppTheme }) {

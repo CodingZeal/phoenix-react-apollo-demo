@@ -1,3 +1,5 @@
+/* @flow */
+
 import React, { Component } from 'react'
 import { themr } from 'react-css-themr';
 import { HotKeys } from 'react-hotkeys'
@@ -5,7 +7,16 @@ import Input from 'react-toolbox/lib/input/Input'
 
 import addTodoTheme from './theme.scss'
 
+type AddTodoTheme = {
+  addTodo: string
+}
+
 class AddTodo extends Component {
+  props: {
+    theme: AddTodoTheme,
+    onSave: () => void
+  }
+
   state = { value: '' }
 
   handleChange = value => {
