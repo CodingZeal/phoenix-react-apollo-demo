@@ -12,9 +12,10 @@ type TodoListTheme = {
   todoList: string
 }
 
-function TodoList({ data: { loading, todos }, theme, updateTodo }: {
+function TodoList({ data: { loading, todos }, theme, deleteTodo, updateTodo }: {
   data: { loading: boolean, todos: Array<TodoType> },
   theme: TodoListTheme,
+  deleteTodo: () => void,
   updateTodo: () => void
 }) {
   if (loading) return <h3>Loading...</h3>
@@ -26,6 +27,7 @@ function TodoList({ data: { loading, todos }, theme, updateTodo }: {
           {...todo}
           key={todo.id}
           onChange={title => updateTodo({ ...todo, title })}
+          onDelete={() => deleteTodo(todo)}
           onToggle={completed => updateTodo({ ...todo, completed })}
         />
       )}

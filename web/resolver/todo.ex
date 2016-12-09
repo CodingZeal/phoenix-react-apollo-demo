@@ -15,6 +15,19 @@ defmodule TodoApp.Resolver.Todo do
     end
   end
 
+  def delete(_parent, %{id: id}, _info) do
+    todo = Repo.get(Todo, id)
+
+    if todo == nil do
+      {:error, 'todo not found' }
+    else
+      case Repo.delete(todo) do
+        {:ok, todo} -> {:ok, todo}
+        {:error, changeset} -> {:error, changeset.errors}
+      end
+    end
+  end
+
   def find(_parent, %{id: id}, _info) do
     {:ok, Todo |> Repo.get(id)}
   end

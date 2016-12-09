@@ -25,6 +25,12 @@ defmodule TodoApp.Schema do
       resolve &Resolver.Todo.create/3
     end
 
+    @desc "Delete a Todo"
+    field :delete_todo, type: :todo do
+      arg :id, non_null(:id)
+      resolve &Resolver.Todo.delete/3
+    end
+
     @desc "Update a Todo"
     field :update_todo, type: :todo do
       arg :id, non_null(:id)

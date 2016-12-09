@@ -19,12 +19,14 @@ storiesOf('Todo', module)
   .add('empty', applyTheme(
     <Todo
         onChange={action('changed')}
+        onDelete={action('deleted')}
         onToggle={action('checked')} />
   ))
   .add('with text', applyTheme(
     <Todo
         title='Do something'
         onChange={action('changed')}
+        onDelete={action('deleted')}
         onToggle={action('toggled')} />
   ))
   .add('completed', applyTheme(
@@ -32,5 +34,6 @@ storiesOf('Todo', module)
         completed
         title='Do something'
         onChange={action('changed')}
+        onDelete={action('deleted')}
         onToggle={action('toggled')} />
   ))

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "apollo-client": "^0.5.12",
+    "babel-polyfill": "^6.20.0",
     "classnames": "^2.2.5",
     "empty": "^0.10.1",
     "flow-bin": "^0.36.0",

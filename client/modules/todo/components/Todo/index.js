@@ -1,8 +1,9 @@
 /* @flow */
 
 import React from 'react'
-
 import { themr } from 'react-css-themr';
+import { HotKeys } from 'react-hotkeys'
+
 import Checkbox from 'react-toolbox/lib/checkbox/Checkbox'
 import Input from 'react-toolbox/lib/input/Input'
 
@@ -14,25 +15,33 @@ type TodoTheme = {
   todo: string,
 }
 
-function Todo({ completed, title, theme, onChange, onToggle }: {
+function Todo({ completed, title, theme, onChange, onDelete, onToggle }: {
   completed?: boolean,
   title?: string,
   theme: TodoTheme,
   onChange: () => void,
+  onDelete: () => void,
   onToggle: () => void
 }) {
+  const keyMap = {
+    deleteEmptyTodo: 'backspace',
+    forceDeleteTodo: 'shift+backspace'
+  }
+  const handlers = {
+    deleteEmptyTodo: e => e.target.value === '' ? onDelete(e) : e,
+    forceDeleteTodo: e => onDelete(e.preventDefault())
+  }
+
   return (
     <div className={theme.todo}>
       <div className={theme.checkbox}>
-        <Checkbox
-            checked={completed}
-            onChange={onToggle} />
+        <Checkbox checked={completed} onChange={onToggle} />
       </div>
 
       <div className={theme.input}>
-        <Input
-            defaultValue={title}
-            onChange={onChange} />
+        <HotKeys keyMap={keyMap} handlers={handlers}>
+          <Input defaultValue={title} onChange={onChange} />
+        </HotKeys>
       </div>
     </div>
   )

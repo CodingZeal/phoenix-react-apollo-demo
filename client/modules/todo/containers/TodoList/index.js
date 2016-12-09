@@ -25,13 +25,31 @@ const updateTodo = gql`
   }
 `
 
+const deleteTodo = gql`
+  mutation deleteTodo($id: ID!) {
+    deleteTodo(id: $id) {
+      id
+    }
+  }
+`
+
 const updateTodoOptions = {
   props: ({ mutate }) => ({
     updateTodo: variables => mutate({ variables })
   })
 }
 
+const deleteTodoOptions = {
+  props: ({ mutate, ownProps: { data: { refetch } } }) => ({
+    deleteTodo: async ({ id }) => {
+      await mutate({ variables: { id } })
+      refetch()
+    }
+  })
+}
+
 export default compose(
   graphql(allTodos),
-  graphql(updateTodo, updateTodoOptions)
+  graphql(updateTodo, updateTodoOptions),
+  graphql(deleteTodo, deleteTodoOptions)
 )(TodoList)
