@@ -25,6 +25,7 @@ coverage
 
 # production
 build
+priv/static
 
 # misc
 .DS_Store
