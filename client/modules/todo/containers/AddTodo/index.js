@@ -4,25 +4,13 @@ import { graphql, compose } from 'react-apollo';
 import gql from 'graphql-tag';
 
 import AddTodo from '../../components/AddTodo'
-
-const allTodos = gql`
-  query allTodos {
-    todos {
-      id,
-      title,
-      completed
-    }
-  }
-`
+import { allTodos, fragments } from '../TodoList'
 
 const createTodo = gql`
   mutation createTodo($title: String, $completed: Boolean) {
-    createTodo(title: $title, completed: $completed) {
-      id,
-      title,
-      completed
-    }
+    createTodo(title: $title, completed: $completed) { ...TodoFields }
   }
+  ${fragments.todo}
 `
 
 const createTodoOptions = {

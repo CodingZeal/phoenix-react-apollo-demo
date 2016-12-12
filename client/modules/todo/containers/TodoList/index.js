@@ -5,31 +5,27 @@ import gql from 'graphql-tag';
 
 import TodoList from '../../components/TodoList'
 
-const allTodos = gql`
-  query allTodos {
-    todos {
-      id,
-      title,
-      completed
-    }
-  }
+export const fragments = {
+  todo: gql`
+    fragment TodoFields on Todo { id, title, completed }
+  `
+}
+
+export const allTodos = gql`
+  query allTodos { todos { ...TodoFields } }
+  ${fragments.todo}
 `
 
 const updateTodo = gql`
   mutation updateTodo($id: ID!, $title: String, $completed: Boolean) {
-    updateTodo(id: $id, title: $title, completed: $completed) {
-      id,
-      title,
-      completed
-    }
+    updateTodo(id: $id, title: $title, completed: $completed) { ...TodoFields }
   }
+  ${fragments.todo}
 `
 
 const deleteTodo = gql`
   mutation deleteTodo($id: ID!) {
-    deleteTodo(id: $id) {
-      id
-    }
+    deleteTodo(id: $id) { id }
   }
 `
 
