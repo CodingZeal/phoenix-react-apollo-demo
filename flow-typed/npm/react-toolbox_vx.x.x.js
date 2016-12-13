@@ -1,4 +1,4 @@
-// flow-typed signature: 5aaaf89ce98b27b65f9606e35df3ac4c
+// flow-typed signature: e18f31fcca3012e646c4b806e3cd0c42
 // flow-typed version: <<STUB>>/react-toolbox_v^1.3.1/flow_v0.36.0
 
 /**
@@ -103,6 +103,10 @@ declare module 'react-toolbox/components/checkbox/Checkbox' {
 }
 
 declare module 'react-toolbox/components/checkbox/index' {
+  declare module.exports: any;
+}
+
+declare module 'react-toolbox/components/chip/__test__/index.spec' {
   declare module.exports: any;
 }
 
@@ -578,6 +582,10 @@ declare module 'react-toolbox/lib/checkbox/index' {
   declare module.exports: any;
 }
 
+declare module 'react-toolbox/lib/chip/__test__/index.spec' {
+  declare module.exports: any;
+}
+
 declare module 'react-toolbox/lib/chip/Chip' {
   declare module.exports: any;
 }
@@ -1038,6 +1046,9 @@ declare module 'react-toolbox/components/checkbox/Checkbox.js' {
 declare module 'react-toolbox/components/checkbox/index.js' {
   declare module.exports: $Exports<'react-toolbox/components/checkbox/index'>;
 }
+declare module 'react-toolbox/components/chip/__test__/index.spec.js' {
+  declare module.exports: $Exports<'react-toolbox/components/chip/__test__/index.spec'>;
+}
 declare module 'react-toolbox/components/chip/Chip.js' {
   declare module.exports: $Exports<'react-toolbox/components/chip/Chip'>;
 }
@@ -1391,6 +1402,9 @@ declare module 'react-toolbox/lib/checkbox/Checkbox.js' {
 }
 declare module 'react-toolbox/lib/checkbox/index.js' {
   declare module.exports: $Exports<'react-toolbox/lib/checkbox/index'>;
+}
+declare module 'react-toolbox/lib/chip/__test__/index.spec.js' {
+  declare module.exports: $Exports<'react-toolbox/lib/chip/__test__/index.spec'>;
 }
 declare module 'react-toolbox/lib/chip/Chip.js' {
   declare module.exports: $Exports<'react-toolbox/lib/chip/Chip'>;
