@@ -38,3 +38,6 @@ config :todo_app, TodoApp.Repo,
   database: "todo_app_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :todo_app, TodoApp.LayoutView,
+  bundle_path: "//localhost:3000/static/js/bundle.js"

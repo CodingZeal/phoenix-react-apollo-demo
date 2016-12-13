@@ -14,7 +14,7 @@
   <body>
     <div id="root"></div>
 
-    <script type="text/javascript" src="//localhost:3000/static/js/bundle.js">
+    <script type="text/javascript" src="<%= bundle_path() %>">
     </script>
   </body>
 </html>
