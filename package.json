@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@kadira/storybook-addon-knobs": "^1.7.1",
+    "@kadira/storybook-addons": "^1.6.1",
     "apollo-client": "^0.5.12",
     "babel-polyfill": "^6.20.0",
     "classnames": "^2.2.5",
@@ -23,6 +24,7 @@
     "react-addons-css-transition-group": "^15.4.1",
     "react-apollo": "^0.7.0",
     "react-dom": "^15.4.1",
+    "react-hotkeys": "^0.9.0",
     "react-redux": "^4.4.6",
     "react-router": "^4.0.0-alpha.6",
     "react-toolbox": "^1.3.1",
