@@ -1,19 +1,34 @@
 # TodoApp
 
-To start your Phoenix app:
+Example app started with Zeal's [React app
+generator](https://github.com/CodingZeal/generator-react-zeal) and a
+[Phoenix](http://www.phoenixframework.org/) back end.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+[Absinthe](http://absinthe-graphql.org/) is used for the GraphQL server with
+[Apollo](http://dev.apollodata.com/) as the GraphQL client
+
+[Live Demo](https://phoenix-react-apollo-demo.herokuapp.com/)
+
+
+## Setup
+
+  * Install elixir dependencies with `mix deps.get`
+  * Set up .env config with `mix todo_app.setup`
+  * Create and migrate your database with `mix ecto.setup`
+  * Install node dependencies with `npm install`
+
+## Development
+
   * Start Phoenix endpoint with `mix phoenix.server`
+  * Start client dev server in another window with `npm start`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000`](http://localhost:4000).
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
-## Learn more
+### GraphiQL
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Visit [`localhost:4000/graphiql`](http://localhost:4000/graphiql).
+
+### Storybook
+
+Start the server with `npm run storybook`
