@@ -15,11 +15,11 @@ type AppTheme = {
   logo: string
 }
 
-export function App(props: { theme: AppTheme }) {
+export function App({ theme }: { theme: AppTheme }) {
   return (
-    <div className={props.theme.app}>
-      <div className={props.theme.header}>
-        <img src={logo} className={props.theme.logo} alt='logo' />
+    <div className={theme.app}>
+      <div className={theme.header}>
+        <img src={logo} className={theme.logo} alt='logo' />
         <h4>Welcome!</h4>
       </div>
 
