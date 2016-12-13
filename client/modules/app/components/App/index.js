@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Match, Miss } from 'react-router'
-import { themr } from 'react-css-themr';
+import { themr } from 'react-css-themr'
 
 import TodoLayout from '../TodoLayout'
 
@@ -15,11 +15,11 @@ type AppTheme = {
   logo: string
 }
 
-function App({ theme }: { theme: AppTheme }) {
+export function App(props: { theme: AppTheme }) {
   return (
-    <div className={theme.app}>
-      <div className={theme.header}>
-        <img src={logo} className={theme.logo} alt='logo' />
+    <div className={props.theme.app}>
+      <div className={props.theme.header}>
+        <img src={logo} className={props.theme.logo} alt='logo' />
         <h4>Welcome!</h4>
       </div>
 

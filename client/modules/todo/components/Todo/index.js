@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import { themr } from 'react-css-themr';
+import { themr } from 'react-css-themr'
 import { HotKeys } from 'react-hotkeys'
 import Checkbox from 'react-toolbox/lib/checkbox/Checkbox'
 import Input from 'react-toolbox/lib/input/Input'

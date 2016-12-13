@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import { themr } from 'react-css-themr';
+import { themr } from 'react-css-themr'
 
 import {
   AddTodoContainer as AddTodo,
@@ -21,7 +21,7 @@ function TodoLayout({ theme }: { theme: TodoTheme }) {
   return (
     <div>
       <div className={theme.addTodoWrapper}>
-        <AddTodo theme={theme}/>
+        <AddTodo theme={theme} />
       </div>
 
       <div className={theme.todoListWrapper}>

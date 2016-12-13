@@ -1,5 +1,8 @@
 /* @flow */
 
-export default function reducer(state: any = {}, _action: any) {
-  return state
-}
+import { createReducer } from 'zeal-redux-utils'
+
+const initialState = {}
+const handlers = {}
+
+export default createReducer(initialState, handlers)

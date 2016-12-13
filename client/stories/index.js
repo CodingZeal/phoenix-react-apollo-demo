@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import { storiesOf, action, addDecorator } from '@kadira/storybook'
+import { storiesOf, action } from '@kadira/storybook'
 import { ThemeProvider } from 'react-css-themr'
 import { host } from 'storybook-host'
 
@@ -11,18 +11,20 @@ import '../styles/commons.scss'
 import theme from '../styles/theme'
 
 function applyTheme(element) {
-  return () => (
-    <ThemeProvider theme={theme}>
-      {element}
-    </ThemeProvider>
-  )
+  return function Component() {
+    return (
+      <ThemeProvider theme={theme}>
+        {element}
+      </ThemeProvider>
+    )
+  }
 }
 
 storiesOf('AddTodo', module)
   .addDecorator(host({
     align: 'top left',
     height: 80,
-    width: 400,
+    width: 400
   }))
   .add('base', applyTheme(
     <AddTodo onSave={action('saved')} />
@@ -32,7 +34,7 @@ storiesOf('Todo', module)
   .addDecorator(host({
     align: 'top left',
     height: 80,
-    width: 400,
+    width: 400
   }))
   .add('empty', applyTheme(
     <Todo

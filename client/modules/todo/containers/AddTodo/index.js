@@ -1,7 +1,7 @@
 /* @flow */
 
-import { graphql, compose } from 'react-apollo';
-import gql from 'graphql-tag';
+import { graphql, compose } from 'react-apollo'
+import gql from 'graphql-tag'
 
 import AddTodo from '../../components/AddTodo'
 import { allTodos, fragments } from '../TodoList'

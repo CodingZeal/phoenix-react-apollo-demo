@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import { themr } from 'react-css-themr';
+import { themr } from 'react-css-themr'
 import ProgressBar from 'react-toolbox/lib/progress_bar/ProgressBar'
 
 import Todo from '../../components/Todo'
@@ -25,12 +25,11 @@ function TodoList({ data: { loading, todos }, theme, deleteTodo, updateTodo }: {
     <div className={theme.todoList}>
       {todos.map(todo =>
         <Todo
-          {...todo}
-          key={todo.id}
-          onChange={title => updateTodo({ ...todo, title })}
-          onDelete={() => deleteTodo(todo)}
-          onToggle={completed => updateTodo({ ...todo, completed })}
-        />
+            {...todo}
+            key={todo.id}
+            onChange={title => updateTodo({ ...todo, title })}
+            onDelete={() => deleteTodo(todo)}
+            onToggle={completed => updateTodo({ ...todo, completed })} />
       )}
     </div>
   )

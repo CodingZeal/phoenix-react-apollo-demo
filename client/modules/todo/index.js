@@ -10,5 +10,5 @@ export {
   AddTodo,
   AddTodoContainer,
   Todo,
-  TodoListContainer,
+  TodoListContainer
 }

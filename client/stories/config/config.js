@@ -1,7 +1,8 @@
-import { configure } from '@kadira/storybook';
+import { configure } from '@kadira/storybook'
 
 function loadStories() {
-  require('../');
+  // eslint-disable-next-line global-require
+  require('../')
 }
 
-configure(loadStories, module);
+configure(loadStories, module)
