@@ -1,23 +1,25 @@
+@import '../../../../styles/globals';
+
 .addTodo {
-  max-width: 600px;
-  padding-top: 30px;
+  max-width: 60 * $unit;
+  padding-top: 3 * $unit;
 }
 
 .addTodoWrapper {
   align-items: center;;
   display: flex;
   justify-content: center;;
-  padding: 0 20px;
+  padding: 0 2 * $unit;
 }
 
 .todoList {
-  max-width: 600px;
-  padding-top: 30px;
+  max-width: 60 * $unit;
+  padding-top: 3 * $unit;
 }
 
 .todoListWrapper {
-  align-items: center;;
+  align-items: center;
   display: flex;
-  justify-content: center;;
-  padding: 0 20px;
+  justify-content: center;
+  padding: 0 2 * $unit;
 }

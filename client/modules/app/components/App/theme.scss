@@ -1,14 +1,17 @@
+@import '../../../../styles/globals';
+@import 'config';
+
 .app {
   text-align: center;
 }
 
 .header {
-  background-color: #222;
-  color: #fff;
-  height: 150px;
-  padding: 20px;
+  background-color: $header-background-color;
+  color: $header-color;
+  height: 15 * $unit;
+  padding: 2 * $unit;
 }
 
 .logo {
-  height: 80px;
+  height: 8 * $unit;
 }

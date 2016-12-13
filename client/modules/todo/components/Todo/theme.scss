@@ -1,7 +1,9 @@
+@import '../../../../styles/globals';
+
 .checkbox {
   flex-shrink: 1;
   position: relative;
-  top: 5px;
+  top: .5 * $unit;
 }
 
 .input {
