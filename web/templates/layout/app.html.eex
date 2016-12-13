@@ -8,13 +8,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link href="<%= styles_path %>" media="all" rel="stylesheet" />
     <title>Hello TodoApp!</title>
   </head>
 
   <body>
     <div id="root"></div>
-
-    <script type="text/javascript" src="<%= bundle_path() %>">
-    </script>
+    <script type="text/javascript" src="<%= client_path %>"></script>
   </body>
 </html>
