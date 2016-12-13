@@ -2,14 +2,18 @@
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "6.9.1",
+    "npm": "4.0.2"
+  },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
-    "@zeal/react-scripts": "0.1.8",
     "babel-preset-stage-1": "^6.16.0"
   },
   "dependencies": {
     "@kadira/storybook-addon-knobs": "^1.7.1",
     "@kadira/storybook-addons": "^1.6.1",
+    "@zeal/react-scripts": "0.1.8",
     "apollo-client": "^0.5.12",
     "babel-polyfill": "^6.20.0",
     "classnames": "^2.2.5",
