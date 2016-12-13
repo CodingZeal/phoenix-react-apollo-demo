@@ -13,20 +13,16 @@ defmodule TodoApp.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", TodoApp do
-    pipe_through :browser # Use the default browser stack
-
-    get "/", PageController, :index
-  end
-
   forward "/graphql", Absinthe.Plug, schema: TodoApp.Schema
+  forward "/graphiql", Absinthe.Plug.GraphiQL, schema: TodoApp.Schema
 
-  if Mix.env == :dev do
-    forward "/graphiql", Absinthe.Plug.GraphiQL, schema: TodoApp.Schema
+  scope "/api", TodoApp do
+    pipe_through :api
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", TodoApp do
-  #   pipe_through :api
-  # end
+  scope "/", TodoApp do
+    pipe_through :browser
+
+    get "/*path", PageController, :index
+  end
 end
