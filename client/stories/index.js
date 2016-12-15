@@ -5,10 +5,10 @@ import { storiesOf, action } from '@kadira/storybook'
 import { ThemeProvider } from 'react-css-themr'
 import { host } from 'storybook-host'
 
-import { AddTodo, Todo } from '../modules/todo'
+import { AddTodo, Todo } from 'modules/todo'
 
-import '../styles/commons.scss'
-import theme from '../styles/theme'
+import 'styles/commons.scss'
+import theme from 'styles/theme'
 
 function applyTheme(element) {
   return function Component() {

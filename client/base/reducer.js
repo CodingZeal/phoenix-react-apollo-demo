@@ -2,7 +2,7 @@
 
 import { combineReducers } from 'redux'
 
-import { reducer as appReducer } from '../modules/app'
+import { reducer as appReducer } from 'modules/app'
 import apolloClient from './apolloClient'
 
 export default combineReducers({

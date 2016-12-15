@@ -6,7 +6,7 @@ import { themr } from 'react-css-themr'
 import {
   AddTodoContainer as AddTodo,
   TodoListContainer as TodoList
-} from '../../../../modules/todo'
+} from 'modules/todo'
 
 import todoTheme from './theme.scss'
 

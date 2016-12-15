@@ -4,3 +4,6 @@
 
 [options]
 module.name_mapper='.*\(.scss\)' -> 'empty/object'
+
+module.system.node.resolve_dirname=client
+module.system.node.resolve_dirname=node_modules

@@ -17,7 +17,7 @@
     "webpack": "^1.13.3"
   },
   "dependencies": {
-    "@zeal/react-scripts": "0.1.8",
+    "@zeal/react-scripts": "0.1.9",
     "apollo-client": "^0.5.12",
     "babel-eslint": "^7.1.1",
     "babel-polyfill": "^6.20.0",

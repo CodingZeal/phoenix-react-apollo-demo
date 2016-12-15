@@ -4,9 +4,6 @@
     "zeal/react"
   ],
   "root": true,
-  "settings": {
-    "import/resolver": "webpack"
-  },
   "rules": {
     "import/extensions": ["warn", "never", { "scss": "always" }],
     "import/no-named-as-default": "off",
