@@ -13,9 +13,8 @@ generator](https://github.com/CodingZeal/generator-react-zeal) and a
 ## Setup
 
   * Install elixir dependencies with `mix deps.get`
-  * Set up .env config with `mix todo_app.setup`
-  * Create and migrate your database with `mix ecto.setup`
   * Install node dependencies with `npm install`
+  * Create and migrate your database with `mix ecto.setup`
 
 ## Development
 
