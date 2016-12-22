@@ -40,4 +40,5 @@ config :todo_app, TodoApp.Repo,
   pool_size: 10
 
 config :todo_app, TodoApp.LayoutView,
-  client_path: "//localhost:3000/static/js/bundle.js"
+  client_path: "//localhost:3000/static/js/bundle.js",
+  styles_path: nil

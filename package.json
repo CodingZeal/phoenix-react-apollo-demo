@@ -53,7 +53,7 @@
   "scripts": {
     "postinstall": "npm run build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "BUILD_PATH=priv/static react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -c client/stories/config",
