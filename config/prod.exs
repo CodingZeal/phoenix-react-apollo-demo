@@ -29,6 +29,9 @@ config :todo_app, TodoApp.Repo,
 # Do not print debug messages in production
 config :logger, level: :info
 
+# Discover static assets from manifest
+config :todo_app, TodoApp.LayoutView, []
+
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key

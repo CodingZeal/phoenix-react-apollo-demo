@@ -39,6 +39,7 @@ config :todo_app, TodoApp.Repo,
   hostname: "localhost",
   pool_size: 10
 
+# Use webpack dev server for static assets
 config :todo_app, TodoApp.LayoutView,
   client_path: "//localhost:3000/static/js/bundle.js",
   styles_path: nil
