@@ -1,16 +1,6 @@
 defmodule TodoApp.Endpoint do
   use Phoenix.Endpoint, otp_app: :todo_app
 
-  if Mix.env == :prod do
-    case File.read("priv/static/asset-manifest.json") do
-      {:ok, content } ->
-        json = Poison.Parser.parse!(content)
-        Application.put_env(:todo_app, TodoApp.LayoutView, json)
-      _ ->
-        :noop
-    end
-  end
-
   if Application.get_env(:todo_app, :sql_sandbox) do
     plug Phoenix.Ecto.SQL.Sandbox
   end
