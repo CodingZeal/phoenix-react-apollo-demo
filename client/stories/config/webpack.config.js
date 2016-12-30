@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   module: {
     loaders: [
@@ -10,5 +12,8 @@ module.exports = {
         loader: 'style!css?modules!sass'
       }
     ]
+  },
+  resolve: {
+    root: path.resolve(__dirname, '../../')
   }
 }
