@@ -1,4 +1,4 @@
-// flow-typed signature: e18f31fcca3012e646c4b806e3cd0c42
+// flow-typed signature: cc26ae1ed31c977b0b604f7d8f5eb74f
 // flow-typed version: <<STUB>>/react-toolbox_v^1.3.1/flow_v0.36.0
 
 /**
@@ -159,6 +159,10 @@ declare module 'react-toolbox/components/drawer/Drawer' {
 }
 
 declare module 'react-toolbox/components/drawer/index' {
+  declare module.exports: any;
+}
+
+declare module 'react-toolbox/components/dropdown/__test__/index.spec' {
   declare module.exports: any;
 }
 
@@ -638,6 +642,10 @@ declare module 'react-toolbox/lib/drawer/index' {
   declare module.exports: any;
 }
 
+declare module 'react-toolbox/lib/dropdown/__test__/index.spec' {
+  declare module.exports: any;
+}
+
 declare module 'react-toolbox/lib/dropdown/Dropdown' {
   declare module.exports: any;
 }
@@ -1088,6 +1096,9 @@ declare module 'react-toolbox/components/drawer/Drawer.js' {
 declare module 'react-toolbox/components/drawer/index.js' {
   declare module.exports: $Exports<'react-toolbox/components/drawer/index'>;
 }
+declare module 'react-toolbox/components/dropdown/__test__/index.spec.js' {
+  declare module.exports: $Exports<'react-toolbox/components/dropdown/__test__/index.spec'>;
+}
 declare module 'react-toolbox/components/dropdown/Dropdown.js' {
   declare module.exports: $Exports<'react-toolbox/components/dropdown/Dropdown'>;
 }
@@ -1444,6 +1455,9 @@ declare module 'react-toolbox/lib/drawer/Drawer.js' {
 }
 declare module 'react-toolbox/lib/drawer/index.js' {
   declare module.exports: $Exports<'react-toolbox/lib/drawer/index'>;
+}
+declare module 'react-toolbox/lib/dropdown/__test__/index.spec.js' {
+  declare module.exports: $Exports<'react-toolbox/lib/dropdown/__test__/index.spec'>;
 }
 declare module 'react-toolbox/lib/dropdown/Dropdown.js' {
   declare module.exports: $Exports<'react-toolbox/lib/dropdown/Dropdown'>;

@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import { Match, Miss } from 'react-router'
+import { Route, Switch } from 'react-router-dom'
 import { themr } from 'react-css-themr'
 
 import TodoLayout from '../TodoLayout'
@@ -23,8 +23,10 @@ export function App({ theme }: { theme: AppTheme }) {
         <h4>Welcome!</h4>
       </div>
 
-      <Match exactly pattern='/' component={TodoLayout} />
-      <Miss component={NotFound} />
+      <Switch>
+        <Route exact path='/' component={TodoLayout} />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   )
 }

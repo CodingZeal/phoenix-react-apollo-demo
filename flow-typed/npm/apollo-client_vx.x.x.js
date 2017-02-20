@@ -1,4 +1,4 @@
-// flow-typed signature: 439fc266a256cf5280da2d70da3762b5
+// flow-typed signature: 92b38ea33beca5b06da025c4244862d2
 // flow-typed version: <<STUB>>/apollo-client_v^0.5.12/flow_v0.36.0
 
 /**
@@ -130,6 +130,10 @@ declare module 'apollo-client/transport/batching' {
   declare module.exports: any;
 }
 
+declare module 'apollo-client/transport/Deduplicator' {
+  declare module.exports: any;
+}
+
 declare module 'apollo-client/transport/middleware' {
   declare module.exports: any;
 }
@@ -143,6 +147,10 @@ declare module 'apollo-client/util/errorHandling' {
 }
 
 declare module 'apollo-client/util/Observable' {
+  declare module.exports: any;
+}
+
+declare module 'apollo-client/version' {
   declare module.exports: any;
 }
 
@@ -234,6 +242,9 @@ declare module 'apollo-client/transport/batchedNetworkInterface.js' {
 declare module 'apollo-client/transport/batching.js' {
   declare module.exports: $Exports<'apollo-client/transport/batching'>;
 }
+declare module 'apollo-client/transport/Deduplicator.js' {
+  declare module.exports: $Exports<'apollo-client/transport/Deduplicator'>;
+}
 declare module 'apollo-client/transport/middleware.js' {
   declare module.exports: $Exports<'apollo-client/transport/middleware'>;
 }
@@ -245,4 +256,7 @@ declare module 'apollo-client/util/errorHandling.js' {
 }
 declare module 'apollo-client/util/Observable.js' {
   declare module.exports: $Exports<'apollo-client/util/Observable'>;
+}
+declare module 'apollo-client/version.js' {
+  declare module.exports: $Exports<'apollo-client/version'>;
 }

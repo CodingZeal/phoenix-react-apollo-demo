@@ -1,4 +1,4 @@
-// flow-typed signature: f6ca5665e3f3071e2b23a2e63d5048a7
+// flow-typed signature: 0fd68635ee221938cb34b9832327a579
 // flow-typed version: <<STUB>>/react-apollo_v^0.7.0/flow_v0.36.0
 
 /**
@@ -22,6 +22,14 @@ declare module 'react-apollo' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
+declare module 'react-apollo/dist/index' {
+  declare module.exports: any;
+}
+
+declare module 'react-apollo/dist/index.min' {
+  declare module.exports: any;
+}
+
 declare module 'react-apollo/lib/ApolloProvider' {
   declare module.exports: any;
 }
@@ -55,6 +63,12 @@ declare module 'react-apollo/lib/test-utils' {
 }
 
 // Filename aliases
+declare module 'react-apollo/dist/index.js' {
+  declare module.exports: $Exports<'react-apollo/dist/index'>;
+}
+declare module 'react-apollo/dist/index.min.js' {
+  declare module.exports: $Exports<'react-apollo/dist/index.min'>;
+}
 declare module 'react-apollo/lib/ApolloProvider.js' {
   declare module.exports: $Exports<'react-apollo/lib/ApolloProvider'>;
 }
