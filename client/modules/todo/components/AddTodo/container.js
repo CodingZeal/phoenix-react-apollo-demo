@@ -3,8 +3,7 @@
 import { graphql, compose } from 'react-apollo'
 import gql from 'graphql-tag'
 
-import AddTodo from '../../components/AddTodo'
-import { allTodos, fragments } from '../TodoList'
+import { allTodos, fragments } from '../TodoList/container'
 
 const createTodo = gql`
   mutation createTodo($title: String, $completed: Boolean) {
@@ -25,4 +24,4 @@ const createTodoOptions = {
 export default compose(
   graphql(allTodos),
   graphql(createTodo, createTodoOptions)
-)(AddTodo)
+)

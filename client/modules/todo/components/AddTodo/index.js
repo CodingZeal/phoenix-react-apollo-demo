@@ -5,13 +5,14 @@ import { themr } from 'react-css-themr'
 import { HotKeys } from 'react-hotkeys'
 import Input from 'react-toolbox/lib/input/Input'
 
+import container from './container'
 import addTodoTheme from './theme.scss'
 
 type AddTodoTheme = {
   addTodo: string
 }
 
-class AddTodo extends Component {
+export class AddTodo extends Component {
   state = { value: '' }
 
   props: {
@@ -19,11 +20,11 @@ class AddTodo extends Component {
     onSave: () => void
   }
 
-  handleChange = value => {
+  handleChange = (value : string) => {
     this.setState({ value })
   }
 
-  handleSave = event => {
+  handleSave = (event : SyntheticInputEvent) => {
     this.props.onSave(event.target.value)
     this.setState({ value: '' })
   }
@@ -45,4 +46,6 @@ class AddTodo extends Component {
   }
 }
 
-export default themr('', addTodoTheme)(AddTodo)
+export const ThemedAddTodo = themr('', addTodoTheme)(AddTodo)
+
+export default container(ThemedAddTodo)

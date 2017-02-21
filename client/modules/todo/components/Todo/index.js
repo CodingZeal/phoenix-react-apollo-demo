@@ -46,4 +46,6 @@ function Todo({ completed, title, theme, onChange, onDelete, onToggle }: {
   )
 }
 
-export default themr('', todoTheme)(Todo)
+export const ThemedTodo = themr('', todoTheme)(Todo)
+
+export default ThemedTodo

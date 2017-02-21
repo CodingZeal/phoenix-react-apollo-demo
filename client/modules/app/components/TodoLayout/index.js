@@ -3,10 +3,7 @@
 import React from 'react'
 import { themr } from 'react-css-themr'
 
-import {
-  AddTodoContainer as AddTodo,
-  TodoListContainer as TodoList
-} from 'modules/todo'
+import { AddTodo, TodoList } from 'modules/todo'
 
 import todoTheme from './theme.scss'
 

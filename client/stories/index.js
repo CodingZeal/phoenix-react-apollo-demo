@@ -5,7 +5,8 @@ import { storiesOf, action } from '@kadira/storybook'
 import { ThemeProvider } from 'react-css-themr'
 import { host } from 'storybook-host'
 
-import { AddTodo, Todo } from 'modules/todo'
+import { ThemedAddTodo as AddTodo } from 'modules/todo/components/AddTodo'
+import { ThemedTodo as Todo } from 'modules/todo/components/Todo'
 
 import 'styles/commons.scss'
 import theme from 'styles/theme'

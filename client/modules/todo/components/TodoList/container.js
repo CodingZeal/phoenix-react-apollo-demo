@@ -3,8 +3,6 @@
 import { graphql, compose } from 'react-apollo'
 import gql from 'graphql-tag'
 
-import TodoList from '../../components/TodoList'
-
 export const fragments = {
   todo: gql`
     fragment TodoFields on Todo { id, title, completed }
@@ -48,4 +46,4 @@ export default compose(
   graphql(allTodos),
   graphql(updateTodo, updateTodoOptions),
   graphql(deleteTodo, deleteTodoOptions)
-)(TodoList)
+)
