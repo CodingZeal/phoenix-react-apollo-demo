@@ -25,5 +25,8 @@
   },
   "env": {
     "jest": true
+  },
+  "globals": {
+    "SyntheticInputEvent": false
   }
 }
