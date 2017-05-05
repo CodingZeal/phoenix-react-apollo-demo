@@ -1,11 +1,12 @@
 # Script for populating the database. You can run it as:
 #
 #     mix run priv/repo/seeds.exs
-#
-# Inside the script, you can read and write to any of your
-# repositories directly:
-#
-#     TodoApp.Repo.insert!(%TodoApp.SomeModel{})
-#
-# We recommend using the bang functions (`insert!`, `update!`
-# and so on) as they will fail if something goes wrong.
+
+alias TodoApp.{Repo, Todo}
+
+Repo.delete_all(Todo)
+
+Repo.insert!(%Todo{title: "Add optimistic updates", completed: false})
+Repo.insert!(%Todo{title: "Add tooltip for hotkeys", completed: false})
+Repo.insert!(%Todo{title: "Use Phoenix", completed: true})
+Repo.insert!(%Todo{title: "Use React", completed: true})
