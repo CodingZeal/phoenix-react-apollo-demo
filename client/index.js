@@ -2,6 +2,7 @@
 
 import 'babel-polyfill'
 import 'material-design-icons/iconfont/material-icons.css'
+import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
