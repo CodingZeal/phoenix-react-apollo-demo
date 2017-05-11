@@ -10,29 +10,18 @@
     "@kadira/storybook": "^2.21.0",
     "@kadira/storybook-addon-knobs": "^1.7.1",
     "@kadira/storybook-addons": "^1.6.1",
-    "babel-preset-stage-1": "^6.16.0",
     "flow-bin": "^0.36.0",
-    "sass-loader": "^4.0.2",
-    "storybook-host": "^1.0.8",
-    "webpack": "^1.13.3"
+    "storybook-host": "^1.0.8"
   },
   "dependencies": {
-    "@zeal/react-scripts": "0.1.9",
+    "@zeal/react-scripts": "^0.2.2",
     "apollo-client": "^0.5.12",
-    "babel-eslint": "^7.1.1",
     "babel-polyfill": "^6.20.0",
     "classnames": "^2.2.5",
     "empty": "^0.10.1",
     "enzyme": "^2.6.0",
-    "eslint": "^3.11.1",
-    "eslint-config-zeal": "^0.14.0",
-    "eslint-import-resolver-webpack": "^0.7.0",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.7.1",
     "graphql-tag": "^1.1.2",
     "history": "^4.4.1",
-    "node-sass": "^3.13.0",
     "normalize.css": "^5.0.0",
     "npm-run-all": "^3.1.2",
     "react": "^15.4.1",
@@ -58,7 +47,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -c client/stories/config",
     "build-storybook": "build-storybook",
-    "lint": "eslint 'client/**/*.js' --max-warnings 0",
+    "lint": "react-scripts lint --max-warnings 0",
     "validate": "npm-run-all --parallel lint test"
   }
 }
