@@ -15,7 +15,7 @@
     "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
     "empty": "^0.10.1",
-    "enzyme": "^2.6.0",
+    "enzyme": "^2.8.2",
     "graphql-tag": "^1.1.2",
     "history": "^4.4.1",
     "npm-run-all": "^4.0.2",
