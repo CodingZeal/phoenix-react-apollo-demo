@@ -3,7 +3,13 @@
     "zeal",
     "zeal/react"
   ],
+  "globals": {
+    "SyntheticInputEvent": false
+  },
   "root": true,
+  "rules": {
+    "react/no-unused-prop-types": "off"
+  },
   "settings": {
     "import/resolver": {
       "webpack": {
@@ -14,19 +20,5 @@
         }
       }
     }
-  },
-  "rules": {
-    "import/extensions": ["warn", "never", { "scss": "always" }],
-    "import/no-named-as-default": "off",
-    "react/no-set-state": "off",
-    "react/no-unused-prop-types": "off",
-    "no-invalid-this": "off",
-    "no-underscore-dangle": "off"
-  },
-  "env": {
-    "jest": true
-  },
-  "globals": {
-    "SyntheticInputEvent": false
   }
 }
