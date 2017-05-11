@@ -12,7 +12,7 @@
   "dependencies": {
     "@zeal/react-scripts": "^0.2.2",
     "apollo-client": "^0.5.12",
-    "babel-polyfill": "^6.20.0",
+    "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
     "empty": "^0.10.1",
     "enzyme": "^2.6.0",
