@@ -1,6 +1,7 @@
 /* @flow */
 
 import 'babel-polyfill'
+import 'material-design-icons/iconfont/material-icons.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
