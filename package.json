@@ -23,7 +23,7 @@
     "react-addons-css-transition-group": "^15.4.1",
     "react-addons-test-utils": "^15.4.1",
     "react-apollo": "^0.7.0",
-    "react-css-themr": "^1.6.1",
+    "react-css-themr": "^2.0.0",
     "react-dom": "^15.4.1",
     "react-hotkeys": "^0.9.0",
     "react-redux": "^5.0.4",

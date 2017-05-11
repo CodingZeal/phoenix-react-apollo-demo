@@ -5798,9 +5798,15 @@ react-color@^2.4.3:
     reactcss "^1.1.1"
     tinycolor2 "^1.1.2"
 
-react-css-themr@^1.6.1, react-css-themr@^1.7.1:
+react-css-themr@^1.7.1:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/react-css-themr/-/react-css-themr-1.7.2.tgz#424701383488f63966677f10a908d40861544ef3"
+  dependencies:
+    invariant "^2.2.1"
+
+react-css-themr@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-css-themr/-/react-css-themr-2.0.0.tgz#c4f93b9284009d9b4565121f09eb6b2bf402c3ef"
   dependencies:
     invariant "^2.2.1"
 
