@@ -1,6 +1,6 @@
 /* @flow */
 
-import { createReducer } from 'zeal-redux-utils'
+import createReducer from 'utils/createReducer'
 
 const initialState = {}
 const handlers = {}

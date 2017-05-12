@@ -3091,6 +3091,12 @@ flow-bin@^0.36.0:
   version "0.36.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.36.0.tgz#557907bd9c2ab0670cfad9e7e906a74b0631e39a"
 
+flux-standard-action@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/flux-standard-action/-/flux-standard-action-1.2.0.tgz#d2d41612dde4cebddd11a76cfead8e84fc69ebdc"
+  dependencies:
+    lodash "^4.0.0"
+
 for-in@^0.1.5:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.6.tgz#c9f96e89bfad18a545af5ec3ed352a1d9e5b4dc8"
@@ -7337,8 +7343,9 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-zeal-redux-utils@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/zeal-redux-utils/-/zeal-redux-utils-0.1.1.tgz#687f3394279de20e6c328fa4e31fcaf0a17091c6"
+zeal-redux-utils@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/zeal-redux-utils/-/zeal-redux-utils-0.3.1.tgz#447bdfa57577e9366e85591e5e0b89422bc6dee7"
   dependencies:
+    flux-standard-action "^1.0.0"
     ramda "^0.22.1"
