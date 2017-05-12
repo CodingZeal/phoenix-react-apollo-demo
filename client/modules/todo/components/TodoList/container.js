@@ -1,7 +1,6 @@
 /* @flow */
 
-import { graphql, compose } from 'react-apollo'
-import gql from 'graphql-tag'
+import { gql, graphql, compose } from 'react-apollo'
 
 export const fragments = {
   todo: gql`
