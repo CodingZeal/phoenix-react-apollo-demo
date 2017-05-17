@@ -25,14 +25,14 @@ function TodoList({ data: { loading, todos }, theme, deleteTodo, updateTodo }: {
 
   return (
     <div className={theme.todoList}>
-      {todos.map(todo =>
+      {todos.map(todo => (
         <Todo
             {...todo}
             key={todo.id}
             onChange={title => updateTodo({ ...todo, title })}
             onDelete={() => deleteTodo(todo)}
             onToggle={completed => updateTodo({ ...todo, completed })} />
-      )}
+      ))}
     </div>
   )
 }
