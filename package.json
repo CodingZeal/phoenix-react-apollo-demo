@@ -2,12 +2,6 @@
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "@kadira/storybook": "^2.21.0",
-    "@kadira/storybook-addon-knobs": "^1.7.1",
-    "@kadira/storybook-addons": "^1.6.1",
-    "storybook-host": "^1.0.8"
-  },
   "dependencies": {
     "@zeal/react-scripts": "^0.2.3",
     "babel-polyfill": "^6.23.0",
@@ -41,8 +35,6 @@
     "test": "CI=true react-scripts test --env=jsdom --coverage",
     "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -c client/stories/config",
-    "build-storybook": "build-storybook",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "react-scripts lint --max-warnings 0",
     "lint:sass": "sass-lint -v --max-warnings 0",
