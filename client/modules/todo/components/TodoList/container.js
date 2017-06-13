@@ -1,5 +1,3 @@
-/* @flow */
-
 import { gql, graphql, compose } from 'react-apollo'
 
 export const fragments = {

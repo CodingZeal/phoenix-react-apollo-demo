@@ -6,7 +6,6 @@
     "@kadira/storybook": "^2.21.0",
     "@kadira/storybook-addon-knobs": "^1.7.1",
     "@kadira/storybook-addons": "^1.6.1",
-    "flow-bin": "^0.36.0",
     "storybook-host": "^1.0.8"
   },
   "dependencies": {

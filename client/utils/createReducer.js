@@ -1,5 +1,3 @@
-// @flow
-
 import { partialRight, test } from 'ramda'
 import { createReducer } from 'zeal-redux-utils'
 

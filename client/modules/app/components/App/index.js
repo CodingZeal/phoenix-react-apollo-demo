@@ -1,5 +1,3 @@
-/* @flow */
-
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { themr } from 'react-css-themr'
@@ -9,13 +7,7 @@ import TodoLayout from '../TodoLayout'
 import appTheme from './theme.scss'
 import logo from './logo.png'
 
-type AppTheme = {
-  app: string,
-  header: string,
-  logo: string
-}
-
-export function App({ theme }: { theme: AppTheme }) {
+export function App({ theme }) {
   return (
     <div className={theme.app}>
       <div className={theme.header}>
