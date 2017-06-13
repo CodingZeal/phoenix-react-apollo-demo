@@ -5,13 +5,7 @@ module.exports = {
     'zeal',
     'zeal/react'
   ],
-  globals: {
-    SyntheticInputEvent: false
-  },
   root: true,
-  rules: {
-    'react/no-unused-prop-types': 'off'
-  },
   settings: {
     'import/resolver': {
       webpack: {
