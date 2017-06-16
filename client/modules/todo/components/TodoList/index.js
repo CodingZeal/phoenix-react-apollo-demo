@@ -1,26 +1,14 @@
-/* @flow */
-
 import React from 'react'
 import { themr } from 'react-css-themr'
 import ProgressBar from 'react-toolbox/lib/progress_bar/ProgressBar'
 import { compose } from 'react-apollo'
 
 import Todo from '../../components/Todo'
-import type { Todo as TodoType } from '../../types'
 
 import container from './container'
 import todoListTheme from './theme.scss'
 
-type TodoListTheme = {
-  todoList: string
-}
-
-function TodoList({ data: { loading, todos }, theme, deleteTodo, updateTodo }: {
-  data: { loading: boolean, todos: Array<TodoType> },
-  theme: TodoListTheme,
-  deleteTodo: () => void,
-  updateTodo: () => void
-}) {
+function TodoList({ data: { loading, todos }, theme, deleteTodo, updateTodo }) {
   if (loading) return <Loading theme={theme} />
 
   return (

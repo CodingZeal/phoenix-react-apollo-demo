@@ -1,5 +1,3 @@
-/* @flow */
-
 import React from 'react'
 import { themr } from 'react-css-themr'
 import { HotKeys } from 'react-hotkeys'
@@ -8,20 +6,7 @@ import Input from 'react-toolbox/lib/input/Input'
 
 import todoTheme from './theme.scss'
 
-type TodoTheme = {
-  checkbox: string,
-  input: string,
-  todo: string,
-}
-
-function Todo({ completed, title, theme, onChange, onDelete, onToggle }: {
-  completed?: boolean,
-  title?: string,
-  theme: TodoTheme,
-  onChange: () => void,
-  onDelete: () => void,
-  onToggle: () => void
-}) {
+function Todo({ completed, title, theme, onChange, onDelete, onToggle }) {
   const keyMap = {
     deleteEmptyTodo: 'backspace',
     forceDeleteTodo: 'shift+backspace'

@@ -1,5 +1,3 @@
-/* @flow */
-
 import createReducer from 'utils/createReducer'
 
 const initialState = {}
