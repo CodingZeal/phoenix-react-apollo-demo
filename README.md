@@ -28,10 +28,6 @@ Now you can visit [`localhost:4000`](http://localhost:4000).
 
 Visit [`localhost:4000/graphiql`](http://localhost:4000/graphiql).
 
-### Storybook
-
-Start the server with `npm run storybook`
-
 ## License
 
 Authored by the Engineering Team of [Coding
