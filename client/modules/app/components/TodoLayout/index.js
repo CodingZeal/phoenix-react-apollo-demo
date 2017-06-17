@@ -1,9 +1,9 @@
-import React from 'react'
-import { themr } from 'react-css-themr'
+import React from "react";
+import { themr } from "react-css-themr";
 
-import { AddTodo, TodoList } from 'modules/todo'
+import { AddTodo, TodoList } from "modules/todo";
 
-import todoTheme from './theme.scss'
+import todoTheme from "./theme.scss";
 
 function TodoLayout({ theme }) {
   return (
@@ -16,7 +16,7 @@ function TodoLayout({ theme }) {
         <TodoList theme={theme} />
       </div>
     </div>
-  )
+  );
 }
 
-export default themr('', todoTheme)(TodoLayout)
+export default themr("", todoTheme)(TodoLayout);

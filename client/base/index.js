@@ -1,7 +1,2 @@
-import apolloClient from './apolloClient'
-import configureStore from './configureStore'
-
-export {
-  apolloClient,
-  configureStore
-}
+export apolloClient from "./apolloClient";
+export configureStore from "./configureStore";
