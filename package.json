@@ -34,16 +34,17 @@
     "zeal-redux-utils": "^1.0.0"
   },
   "scripts": {
-    "postinstall": "npm run build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=true react-scripts test --env=jsdom --coverage",
-    "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "format": "prettier --write 'client/**/*.js'",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "react-scripts lint --max-warnings 0",
     "lint:sass": "sass-lint -v --max-warnings 0",
+    "postinstall": "npm run build",
     "precommit": "lint-staged",
+    "start": "react-scripts start",
+    "test": "CI=true react-scripts test --env=jsdom --coverage",
+    "test:watch": "react-scripts test --env=jsdom",
     "validate": "npm-run-all --parallel lint test"
   },
   "lint-staged": {
