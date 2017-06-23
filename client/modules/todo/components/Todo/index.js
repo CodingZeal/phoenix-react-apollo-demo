@@ -1,20 +1,20 @@
-import React from 'react'
-import { themr } from 'react-css-themr'
-import { HotKeys } from 'react-hotkeys'
-import Checkbox from 'react-toolbox/lib/checkbox/Checkbox'
-import Input from 'react-toolbox/lib/input/Input'
+import React from "react";
+import { themr } from "react-css-themr";
+import { HotKeys } from "react-hotkeys";
+import Checkbox from "react-toolbox/lib/checkbox/Checkbox";
+import Input from "react-toolbox/lib/input/Input";
 
-import todoTheme from './theme.scss'
+import todoTheme from "./theme.scss";
 
 function Todo({ completed, title, theme, onChange, onDelete, onToggle }) {
   const keyMap = {
-    deleteEmptyTodo: 'backspace',
-    forceDeleteTodo: 'shift+backspace'
-  }
+    deleteEmptyTodo: "backspace",
+    forceDeleteTodo: "shift+backspace"
+  };
   const handlers = {
-    deleteEmptyTodo: e => e.target.value === '' ? onDelete(e) : e,
+    deleteEmptyTodo: e => (e.target.value === "" ? onDelete(e) : e),
     forceDeleteTodo: e => onDelete(e.preventDefault())
-  }
+  };
 
   return (
     <div className={theme.todo}>
@@ -28,9 +28,9 @@ function Todo({ completed, title, theme, onChange, onDelete, onToggle }) {
         </HotKeys>
       </div>
     </div>
-  )
+  );
 }
 
-export const ThemedTodo = themr('', todoTheme)(Todo)
+export const ThemedTodo = themr("", todoTheme)(Todo);
 
-export default ThemedTodo
+export default ThemedTodo;

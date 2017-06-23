@@ -1,6 +1,6 @@
-import createReducer from 'utils/createReducer'
+import createReducer from "utils/createReducer";
 
-const initialState = {}
-const handlers = {}
+const initialState = {};
+const handlers = {};
 
-export default createReducer(initialState, handlers)
+export default createReducer(initialState, handlers);
