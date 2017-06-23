@@ -36,7 +36,7 @@
   "scripts": {
     "postinstall": "npm run build",
     "start": "react-scripts start",
-    "build": "BUILD_PATH=priv/static react-scripts build",
+    "build": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom --coverage",
     "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
