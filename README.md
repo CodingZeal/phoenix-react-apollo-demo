@@ -7,8 +7,6 @@ generator](https://github.com/CodingZeal/generator-react-zeal) and a
 [Absinthe](http://absinthe-graphql.org/) is used for the GraphQL server with
 [Apollo](http://dev.apollodata.com/) as the GraphQL client
 
-[Live Demo](https://phoenix-react-apollo-demo.herokuapp.com/)
-
 
 ## Setup
 
